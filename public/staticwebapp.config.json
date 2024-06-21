@@ -16,9 +16,9 @@
             "customOpenIdConnectProviders": {
                 "auth0": {
                     "registration": {
-                        "clientIdSettingName": "MY_PROVIDER_CLIENT_ID",
+                        "clientIdSettingName": "6vr9r49a0pdeuthvlnmmev6lcg",
                         "clientCredential": {
-                            "clientSecretSettingName": "MY_PROVIDER_CLIENT_SECRET"
+                            "clientSecretSettingName": "1lnv79h32du88185uldrbokrn9efj065js3j0h3jf9f5g21n69pm"
                         },
                         "openIdConnectConfiguration": {
                             "wellKnownOpenIdConfiguration": "https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_zitCthMcW/.well-known/openid-configuration"
