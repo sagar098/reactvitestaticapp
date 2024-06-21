@@ -1,0 +1,19 @@
+{
+   "auth": {
+        "identityProviders": {
+        "customOpenIdConnectProviders": {
+            "cognito": {
+                "registration": {
+                        "clientIdSettingName": "7sdmbs6c43ojto5bjl5ak35t67",
+                        "clientCredential": {
+                            "clientSecretSettingName": "1qk4f7141dq8p9aqf1cpk65o25dihb6p0dbu4vbs24bhcqd1sq7d"
+                        },
+                        "openIdConnectConfiguration": {
+                            "wellKnownOpenIdConfiguration": "https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_zitCthMcW/.well-known/openid-configuration"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
