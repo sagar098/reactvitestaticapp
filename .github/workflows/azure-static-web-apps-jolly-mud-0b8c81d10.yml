@@ -35,7 +35,8 @@ jobs:
         env:
           MY_PROVIDER_CLIENT_ID: ${{ secrets.MY_PROVIDER_CLIENT_ID }}
           MY_PROVIDER_CLIENT_SECRET: ${{ secrets.MY_PROVIDER_CLIENT_SECRET }}
-
+      - name: List Files in Build Directory
+        run: ls -R build
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
