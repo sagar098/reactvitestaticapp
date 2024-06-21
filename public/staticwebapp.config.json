@@ -6,26 +6,27 @@
       }
     ],
     "responseOverrides": {
-        "401": {
-          "statusCode": 302,
-          "redirect": "/.auth/login/cognito"
-        }
+      "401": {
+        "statusCode": 302,
+        "redirect": "/.auth/login/cognito"
+      }
     },
     "auth": {
-        "identityProviders": {
-            "customOpenIdConnectProviders": {
-                "cognito": {
-                    "registration": {
-                        "clientIdSettingName": "MY_PROVIDER_CLIENT_ID",
-                        "clientCredential": {
-                            "clientSecretSettingName": "MY_PROVIDER_CLIENT_SECRET"
-                        },
-                        "openIdConnectConfiguration": {
-                            "wellKnownOpenIdConfiguration": "https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_zitCthMcW/.well-known/openid-configuration"
-                        }
-                    }
-                }
+      "identityProviders": {
+        "customOpenIdConnectProviders": {
+          "cognito": {
+            "registration": {
+              "clientIdSettingName": "MY_PROVIDER_CLIENT_ID",
+              "clientCredential": {
+                "clientSecretSettingName": "MY_PROVIDER_CLIENT_SECRET"
+              },
+              "openIdConnectConfiguration": {
+                "wellKnownOpenIdConfiguration": "https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_zitCthMcW/.well-known/openid-configuration"
+              }
             }
+          }
         }
+      }
     }
 }
+  
