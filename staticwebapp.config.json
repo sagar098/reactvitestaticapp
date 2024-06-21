@@ -5,7 +5,13 @@
         "allowedRoles": ["authenticated"]
       }
     ],
-   "auth": {
+    "responseOverrides": {
+        "401": {
+          "statusCode": 302,
+          "redirect": "/.auth/login/cognito"
+        }
+    },
+    "auth": {
         "identityProviders": {
         "customOpenIdConnectProviders": {
             "cognito": {
