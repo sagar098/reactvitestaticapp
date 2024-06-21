@@ -1,20 +1,8 @@
 {
-    "routes": [
-      {
-        "route": "/*",
-        "allowedRoles": ["authenticated"]
-      }
-    ],
-    "responseOverrides": {
-      "401": {
-        "statusCode": 302,
-        "redirect": "/.auth/login/cognito"
-      }
-    },
     "auth": {
       "identityProviders": {
         "customOpenIdConnectProviders": {
-          "cognito": {
+          "aadb2c": {
             "registration": {
               "clientIdSettingName": "MY_PROVIDER_CLIENT_ID",
               "clientCredential": {
@@ -23,10 +11,15 @@
               "openIdConnectConfiguration": {
                 "wellKnownOpenIdConfiguration": "https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_zitCthMcW/.well-known/openid-configuration"
               }
+            },
+            "login": {
+              "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+              "scopes": [],
+              "loginParameterNames": []
             }
           }
         }
       }
     }
-}
+  }
   
