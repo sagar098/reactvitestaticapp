@@ -38,7 +38,7 @@ jobs:
       - name: List Files in Build Directory
         run: ls -R dist
       - name: Read staticwebapp.config.json
-        run: cat build/staticwebapp.config.json
+        run: cat dist/staticwebapp.config.json
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
