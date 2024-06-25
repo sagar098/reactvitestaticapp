@@ -16,7 +16,7 @@ function App() {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        setMessage(data); // Assuming the response has a field named 'message'
+        setMessage(data.text); // Assuming the response has a field named 'message'
       } catch (error) {
         setError(error);
       } finally {
