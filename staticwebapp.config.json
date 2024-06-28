@@ -3,7 +3,7 @@
   "routes": [
     {
       "route": "/docs/*",
-      "rewrite": "https://documentationfiles.blob.core.windows.net/docs/{*path}"
+      "rewrite": "https://documentationfiles.blob.core.windows.net/docs/TestBlobPage.html"
     }
   ],
   "auth": {
