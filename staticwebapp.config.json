@@ -1,4 +1,11 @@
+
 {
+  "routes": [
+    {
+      "route": "/docs/*",
+      "rewrite": "https://documentationfiles.blob.core.windows.net/docs/{*path}"
+    }
+  ],
   "auth": {
     "identityProviders": {
       "customOpenIdConnectProviders": {
