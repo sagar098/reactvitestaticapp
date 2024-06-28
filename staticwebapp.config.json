@@ -2,7 +2,7 @@
   "auth": {
     "identityProviders": {
       "customOpenIdConnectProviders": {
-        "auth0": {
+        "cognito": {
           "registration": {
             "clientIdSettingName": "MY_PROVIDER_CLIENT_ID",
             "clientCredential": {
