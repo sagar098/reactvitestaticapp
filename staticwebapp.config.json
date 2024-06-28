@@ -4,11 +4,6 @@
     {
       "route": "/*",
       "allowedRoles": ["authenticated"]
-    },
-    {
-      "route": "/docs/*",
-      "redirect": "https://documentationfiles.blob.core.windows.net/docs/TestBlobPage.html",
-      "statusCode": 302
     }
   ],
   "responseOverrides": {
