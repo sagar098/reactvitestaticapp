@@ -4,17 +4,17 @@
       "customOpenIdConnectProviders": {
         "auth0": {
           "registration": {
-            "clientIdSettingName": "AUTH0_ID",
+            "clientIdSettingName": "MY_PROVIDER_CLIENT_ID",
             "clientCredential": {
-              "clientSecretSettingName": "AUTH0_SECRET"
+              "clientSecretSettingName": "MY_PROVIDER_CLIENT_SECRET"
             },
             "openIdConnectConfiguration": {
-              "wellKnownOpenIdConfiguration": "https://dev-rkqb87mzhesm5zjl.us.auth0.com/.well-known/openid-configuration"
+              "wellKnownOpenIdConfiguration": "https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_zitCthMcW/.well-known/openid-configuration"
             }
           },
           "login": {
             "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
-            "scopes": ["openid", "profile"]
+            "scopes": []
           }
         }
       }
